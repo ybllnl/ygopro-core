@@ -229,6 +229,12 @@ OCGCORE_API int32_t query_card(intptr_t pduel, uint8_t playerid, uint8_t locatio
 		return LEN_EMPTY;
 	}
 }
+OCGCORE_API int32_t query_lp(intptr_t pduel, uint8_t playerid) {
+	duel* ptduel = (duel*)pduel;
+	if (!check_playerid(playerid)) return 0;
+	return ptduel->game_field->player[playerid].lp;
+}
+
 OCGCORE_API int32_t query_field_count(intptr_t pduel, uint8_t playerid, uint8_t location) {
 	duel* ptduel = (duel*)pduel;
 	if (!check_playerid(playerid))

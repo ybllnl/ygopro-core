@@ -59,6 +59,7 @@ OCGCORE_API int32_t query_field_card(intptr_t pduel, uint8_t playerid, uint8_t l
 OCGCORE_API int32_t query_field_info(intptr_t pduel, byte* buf);
 OCGCORE_API void set_responsei(intptr_t pduel, int32_t value);
 OCGCORE_API void set_responseb(intptr_t pduel, byte* buf);
+OCGCORE_API int32_t query_lp(intptr_t pduel, uint8_t playerid);
 OCGCORE_API int32_t preload_script(intptr_t pduel, const char* script_name);
 OCGCORE_API byte* default_script_reader(const char* script_name, int* len);
 
